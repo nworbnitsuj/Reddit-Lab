@@ -11,6 +11,10 @@ app.use(function(req, res, next) {
   next();
 });
 
+app.get("/", function(req,res) {
+  res.send("HELLO from backend");
+});
+
 var bodyParser = require('body-parser');
 app.use(bodyParser.json());
 
